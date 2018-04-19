@@ -1,0 +1,825 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="PM,产品," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="腹有诗书气自华的毛毛亮" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="测试一下MD效果，完全转载： 做产品需求最全的方法都在这了丨腾讯产品法则 各位同学大家好，很高兴大家来到馒头商学院听我的分享，今天我想分享的主题是需求是怎样炼成的？通过接下来的课程大家可以了解到什么是需求，如何获取评估需求，如何定义需求的优先级，以及如何在日常工作中管理我们的产品需求。 1.产品需求到底是什么？ 在开始讲互联网产品需求分析与管理之前，我们要首先明确什么是需求！需求的产生来自于欲望，">
+<meta name="keywords" content="PM,产品">
+<meta property="og:type" content="article">
+<meta property="og:title" content="做产品需求最全的方法都在这了丨腾讯产品法则">
+<meta property="og:url" content="http://maomaoliang.github.io/2015/12/14/PM.ProductRequestTencent/index.html">
+<meta property="og:site_name" content="腹有诗书气自华的毛毛亮">
+<meta property="og:description" content="测试一下MD效果，完全转载： 做产品需求最全的方法都在这了丨腾讯产品法则 各位同学大家好，很高兴大家来到馒头商学院听我的分享，今天我想分享的主题是需求是怎样炼成的？通过接下来的课程大家可以了解到什么是需求，如何获取评估需求，如何定义需求的优先级，以及如何在日常工作中管理我们的产品需求。 1.产品需求到底是什么？ 在开始讲互联网产品需求分析与管理之前，我们要首先明确什么是需求！需求的产生来自于欲望，">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm1.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm2.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm3.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm4.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm5.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm6.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm6.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm7.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm9.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm10.webp">
+<meta property="og:image" content="http://maomaoliang.github.io/assets/blogImg/pm11.webp">
+<meta property="og:updated_time" content="2016-06-02T07:46:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="做产品需求最全的方法都在这了丨腾讯产品法则">
+<meta name="twitter:description" content="测试一下MD效果，完全转载： 做产品需求最全的方法都在这了丨腾讯产品法则 各位同学大家好，很高兴大家来到馒头商学院听我的分享，今天我想分享的主题是需求是怎样炼成的？通过接下来的课程大家可以了解到什么是需求，如何获取评估需求，如何定义需求的优先级，以及如何在日常工作中管理我们的产品需求。 1.产品需求到底是什么？ 在开始讲互联网产品需求分析与管理之前，我们要首先明确什么是需求！需求的产生来自于欲望，">
+<meta name="twitter:image" content="http://maomaoliang.github.io/assets/blogImg/pm1.webp">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 做产品需求最全的方法都在这了丨腾讯产品法则 | 腹有诗书气自华的毛毛亮 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?34f089c6238a8954f7a11596c82077f0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">腹有诗书气自华的毛毛亮</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Change myself or Keep myself</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'hdUL6xonNozsy_ewSMxF','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                做产品需求最全的方法都在这了丨腾讯产品法则
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-14T15:30:00+08:00" content="2015-12-14">
+              2015-12-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Skills/" itemprop="url" rel="index">
+                    <span itemprop="name">Skills</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>测试一下MD效果，完全转载：</p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5OTM5OTAyMQ==&amp;mid=401939884&amp;idx=3&amp;sn=2ac24da8bc66660ee352e12596fc7be0&amp;scene=23&amp;srcid=1214rm8NSBuEZ0iLhRcpYe1M#rd" target="_blank" rel="noopener">做产品需求最全的方法都在这了丨腾讯产品法则</a></p>
+<p>各位同学大家好，很高兴大家来到馒头商学院听我的分享，今天我想分享的主题是需求是怎样炼成的？通过接下来的课程大家可以了解到什么是需求，如何获取评估需求，如何定义需求的优先级，以及如何在日常工作中管理我们的产品需求。</p>
+<p><strong>1.产品需求到底是什么？</strong></p>
+<p>在开始讲互联网产品需求分析与管理之前，我们要首先明确什么是需求！需求的产生来自于欲望，当人们对某种产品有了欲望就会产生购买动机，但这还不是真正意义上的市场有效需求。市场的有效需求应该是人们的欲望加购买力。比如说我们想获得某些方面的知识，我们就需要购买相应的书籍，当我们兜里的货币不足以支付那本书的价格的时候，那仅仅是一个欲望。当我们的购买力超过这本书的价格的时候，就从欲望过渡到了需求。对应到互联网上，用户需求就是用户想要的能够解决问题或达到目标的欲望的集合。</p>
+<p>作为产品经理，应该能够深刻把握用户深层次的本质需求，通过用户分析，了解用户想法，提高用户心理满足的预期。</p>
+<a id="more"></a>
+<p><strong>2.需求都哪些分类？</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm1.webp" alt="需求都哪些分类"></p>
+<p>需求按照分类还可以分成有声需求和无声需求。有声需求就是用户能够准确或相对准确的表达出的自己的需求，比如说，滴滴打车他满足的其实是用户出行的需要。那么还有无声需求就是用户习惯性的默认需要和因他的认知能力和表达能力局限，他表达不出来的那种需求。比如说我们在出行的时候，还会有聊天和社交的这种需要。那么你在去和用户沟通的时候，他可能无法很清晰的给你表达出来，这就属于一种无声需求。</p>
+<p>需求还可以根据用户表达的深度可以分为表面需求和本质需求，表面需求是指用户要解决问题或达到目的而需要的方案，本质需求就是用户要解决的问题或达到的目标。这个大家都很容易理解。在后面的评估需求管理里面我还会讲一个KANO模型。这里面还会将用户需求分成基本需求、期望需求和兴奋需求。</p>
+<p><strong>3.获取需求的几种实用方法</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm2.webp" alt="获取需求的几种实用方法"></p>
+<p>当我们了解到什么是需求之后，如何获取需求是我们下一步需要考虑的。获取需求的办法主要是分成定量分析和定性分析两种。定性分析就是对需求进行质的分析，具体来说就是运用、归纳和演绎，抽象和概括的方法，对于我们获得的各种信息进行思维加工，然后总结出需求的内在规律。定性分析主要凭借分析者的直觉和经验，凭借分析对象过去和现在的状况，以及最新的资料，对分析对象的性质和特点还有他的变化规律做出判断的一种方法。</p>
+<p>定性分析里面我们更多的是说凭借我们的知识和经验去进行一个判断，比如说我会认为当前的消费者在出行上遇到了很多问题，比如打不到车，这就是我们认为的一个需求，一个核心需求，像这种判断就来自于一种经验和直觉，这也是对目前交通状况的一个判断，所以得出这样一个需求。</p>
+<p>定量分析是依据统一数据建立模型，并用数据模型算出需求的各项指标及数值的一种方法。定量分析其实就是说我在有一个目标之后我要通过一些数据去验证他的合理性以及算出我这个目标它实际的价值有多大。定量分析和定性分析是相互补充的，定性分析是定量分析的基本前提，没有定性分析，定量其实是一种很盲目的状态；而定量分析却使定性分析更加科学准确。他可以使定性分析得出广泛而深入的结论。</p>
+<p>在我们日常中，获得需求的具体办法里面就包括行业调研分析、业内专家的指导、定性用户访谈、调查问卷、运营数据分析、竞争对手分析等这几种具体方法。</p>
+<p><strong>4.如何在与用户对话中获取需求？</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm3.webp" alt="如何在与用户对话中获取需求"></p>
+<p>首先是定性访谈，包括一对一的访谈和一对多的访谈，无论是一对一还是一对多，他们进行的流程都是一致的。首先要明确你访谈的目的，访谈的目的就是说我为什么要做这个访谈，这个访谈能够解决什么样的问题。第二步就是要确定访谈对象，如果你的目的已经很明确了，访谈对象应该是选我们的目标用户，目标用户一定是说在我们的产品上比较活跃，能够为我们献计献言的用户。第三步是你在做访谈时要营造良好的氛围，不要太过严肃，就像好朋友聊天一样。</p>
+<p>第四步是访谈中要有策略，提问的时候会有一个预先的顺序，你可以先聊一些用户比较感兴趣的东西，对用户做一些肯定，用户就会更容易回答你的问题。第五步验证需求，用户的表达上可能会有些偏差，你要用后面介绍的 KANO模型去分析表现的需求是否属实；第六步，一定要记录成果，很多人在聊天的时候很开心，但是没有人记录成果，结束后回忆会遗漏很多细节，这就需要有人专门去记录，如果条件允许可以去用录音笔。</p>
+<p>我们举个例子，比如说我们想了解中介公司经纪人在网上发布房源，解决管理房源时发生的问题，以这个作为一个案例，我们可以讲一下。首先在访谈前要明确我们的目的，目的就是为了方便经纪人在网络上发布管理房源，给他们带来更多的客户。我们在用户筛选的时候，要有一部分是刚刚注册还未使用的经纪人，还有有一些使用产品比如半年以上的中度用户，还要有老的资深的用户，新老用户各选一部分，各个经纪公司也各选一部分，这样平均一些。然后确定访谈的时间地点，比如会确定都很方便的时间。之后细化问题。</p>
+<p><strong>5.调查问卷该怎样设计？</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm4.webp" alt="调查问卷该怎样设计"></p>
+<p>讲完定性访谈之后给大家讲一下如何去设计调查问卷的流程，第一步讲明你的调研目的，要告知用户，填写调查问卷对调查者产生的价值和帮助，第二步确定数据收集的方式，包括面谈，电话访谈等。第三步确定问卷格式，对于开放式问题，需要用户自己做填写，这样尽量不要用是或否，无意义，建议用分级走。第四步设置问题的措辞也要注意，不要存在歧义，用通俗易懂的词。第五步，调查问卷的流程和布局，尽量避免跳级的方式。</p>
+<p>第六要评估流程布局，这个问卷是不是时间太长了用户是否有耐心做完，还有就是说问题较多，是否该采用分页方式。第七步是测试和修正，你可以选择一些小范围的比如说公司同事，或者是之前比较热心的用户，看他们对问卷的反感度，然后做一些小的修正。第八步就是实施，比如打印纸质让用户填写，还可以从网站去填，在一些活动中嵌入我们的问卷。第九步就是在实施之后做一些回顾和总结，在调查后将用户的意见收集过来，然后和你的需求做比较，看你的需求是否合理。</p>
+<p><strong>6.通过运营数据获取需求</strong></p>
+<p>获取需求的方法除了定性访谈法和问卷调查之外，我们还可以从日常运营数据中获取一些需求。互联网和移动互联网产品上线之后就会产生大量的数据，比如说客户反馈的数据，用户购买的产品信息数据还有页面入口的访问量、PV、UV呀以及各个模块使用的频率，其实每一个数据后面都饱含着一些信息和知识，把这些信息和知识发现并捕捉出来最容易发现用户最真实的需求。</p>
+<p>我们举一个案例，这个是《中国好声音》网络专题用户分时段访问量的一个数据，我们就以周五（好声音的播出时间）做一条线为例。我们把蓝色这条线分成四个段，早上的访问量是很少的，从十点到晚上七点这个时间段有一定的访问量，但不是很多，从17点到21点这一段大家可以看是一个上升比较明显的时间段，第三个是从21点到22点又是一个下降，从22点到23点又是一个上升。</p>
+<p>如果我们是网络专题的产品经理的话，其实这个数据对我们产品的投放策略是有一定帮助的，比如说我们从上午十点到晚上七点，这一段是2012年的7月份，移动互联网还不像现在这么热，这一段其实是一个上班时间，那么能够进行网络访问的都是一些具有上网条件的人，这里以办公室白领和学生为主，如果这个时间段做广告投放就要以这个群体他们喜欢的做这种针对性的投放。</p>
+<p>然后到晚上七点到九点这个时间段会有一个猛烈的回升，这个时间段就是白天没有条件上网的人已经回到家了，这个时间段就是一个很刚性的需求，大家都在访问网络，这个时间段人群比较复杂，不需要做针对性的推送广告，我们可以做一些更粗暴的广告，我们就投放一些价值更高的用户，对他们进行广告推送，然后到21点到22点，这个时间段人们就开始看电视，广告投放效果并不好，过了这个时间段之后，节目进行到一半，会有很大吐槽或者是讨论的剧情出来，这个时间段会有大量访问量，我们就可以将对我们效益最大的客户的广告推送出来。</p>
+<p>所以，日常数据运营中的数据对我们有很大的帮助，我们可以根据数据对产品做一个策略性的调整。其实我们还可以制造事件，进一步的挖掘需求，这个是指通过一定的营销手段或事件，将用户对某种需求的强烈度放大，进而引导用户产生使用行为或消费行为。比如说小米的M码，新浪微博召开过一次开发者大会其实这本身也是一种营销手段。</p>
+<p><strong>7.怎么样有效记录需求呢？</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm5.webp" alt="怎么样有效记录需求"></p>
+<p>我们在获取到这些需求之后还要学会如何去记录需求，但是各个公司的要求是不一样的，这里有些内容是必须包括在内的，比如说内容，对你的需求做一个简单的说明，还有就是编号，对你的需求做一个简单的编号，要将需求按类型，顺序排好，还有年度时间。还有需求的来源，他是来自老板需求还是我们经过调研还是运营数据里面。需求的原因，原因中要写明我们的需求满足了用户哪些痛点，他是如何产生的。还有受众的范围，我们的用户是解决了所有用户还是只解决了一部分我们平台上的活跃用户。还有需求的难度，要评估实现需求的技术难度，还有就是需求实现的成本，包括开发成本和运营成本。通常情况下都由产品经理来做这个内容和总结，还有就是如何去记录需求。</p>
+<p><strong>8.这可能是评估需求最全的方法</strong></p>
+<p>在互联网产品需求分析和管理里面还有比较重要的是评估需求，评估需求的方法有KANO模型、学会减法、还有专家评审和AB测试。</p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm6.webp" alt="这可能是评估需求最全的方法"></p>
+<p>首先先介绍下KANO模型，是由日本的卡诺博士提出来的，模型定义了三个层次的用户需求，即基本型需求、期望型需求、兴奋型需求。基本型需求就是指用户认为你这个产品中必须要有的，我们常说的用户的痛点，如果这些需求没有得到满足，客户基本上就不会用你这个产品；如果这些需求得到满足，用户对产品的满意度也不见得得到多大的满足。</p>
+<p>第二个是期望型需求，期望型需求并不是产品必须有的需求，有的期望型需求只是用户期望有的，但是用户也不一定会明确表达出来的，这就像用户的一个痒点，如果不满足用户，他的满意度会明显不足。</p>
+<p>第三个就是兴奋型需求，这个对用户来说就是出乎意料的需求，他觉得你的产品可能不会有，你做了他对用户产生的惊喜，这就是用户的一个兴奋点。这些兴奋点可能用户自己都不清楚，一旦拥有之后用户的体验度就会大幅度提高，也会增加客户的忠诚度，这个需求就是客户的潜在需求。</p>
+<p><strong>9.学会对需求做减法</strong></p>
+<p>在做产品评估的时候我们也要学会去做减法，有时候决定不做什么比决定做什么更为重要，我们要遵循少即是多的原则，大家可以看一些比较火的互联网产品，其实他们的界面相对来说都比较简单，产品的迭代和发布都是比较有前瞻性和规划性的，产品经理其实要学会控制着自己，避免增加一些不必要的功能。</p>
+<p>那么如何去做减法呢？我们会从四个维度去尝试，我们可以通过产品定位去做减法，也可以通过产品价值、产品场景还有产品迭代。</p>
+<p>下面我给大家举例子教大家怎么去做，首先根据产品定位去做减法，产品定位我们建议更多是专注。尤其是创业阶段，要特别注意产品定位的阶段性，也有助于在特定阶段做减法，比如说百度这个产品，百度在一定时间段定位就是信息搜索和综合方案的供应商。你从百度大事记中可以看出百度其实一直专注于信息搜索和综合解决方案，比如以网络搜索为主要功能，或者是针对区域做的一些专业搜索，比如说这种网页啊，产品、新闻、图片、导航这种类型，还有这种以贴吧为主社区搜索，我们知道的有贴吧、知道、百科、文库这些。其实这些都基于信息搜索的综合解决方案。</p>
+<p>大家可以想一下，我们在去火车站的时候，火车站的客流很大，所以会有一些消费场所，这是针对火车站的客流导入进来的。但是这些量还是非常少的，对于大多数的旅客而言他们的主要目标还是为了到达目的地，去火车站的消费场所毕竟是少部分人，所以大部分的火车站的基础服务都没有做好就去做消费就会很盲目。</p>
+<p>通过产品价值做减法我会给大家介绍一下腾讯微博的推荐页，先给大家解释一下什么是产品价值，产品价值就是给用户带来的核心价值、期望价值和潜在价值，这些价值在之前讲的KANO模型就是对应的基本型需求、期望型需求和兴奋型需求，其实每个功能的存在都是为了解决用户的问题，也就是说你要清楚我做这个功能他能满足用户什么样的需求，带来的价值是什么？</p>
+<p>所以我们当时来做这个推荐页卡的时候，一开始就是觉得单纯的做人的推荐其实没有必要，对于产品来讲他就是没有价值，他不属于核心价值也不属于期望价值。到后期的时候用户量和用户的活跃度出现了一些下降，我推荐了很多人之后发现他们这些人没有以前活跃了，那么我在用微博的时候他的可读性就会打了很多折扣。这样用户的需求就会降低，如果把一些很优质的很活跃的内容通过对用户行为的记录推荐给用户，比如说用户对电影对体育比较感兴趣，我们就将电影和体育的相关内容推荐给他。</p>
+<p>我们通过这种方式展现出来，激活用户读的需要，他们就会在页卡里发现很多他们感兴趣的东西，这实际上就是一个兴奋型需求，这个功能出来以后我们也看了一下数据，用户在这个页卡的阅读时间也持续增加，说明这个页卡解决了用户很多需求。</p>
+<p>第三个就是根据产品场景做减法。举例说和腾讯相关的，腾讯新闻客户端当时有个功能叫做离线下载，离线下载里面有文字下载，图片的下载还有视频的下载。如果多做的话，产品就会很大，有些下载时间就会比较长。</p>
+<p>我们当时从产品的使用场景做了一个判断。用户需要下载新闻的场景通常就是他要离开马上去一个网络环境不好的地方，或者说是需要使用流量的地方。这段时间他想看新闻就会去下载。一般不会提前下载，不可能说头一天去下载第二天才去看。用户使用最多的场景一定是离开家或者离开公司，也就是上下班之前大概有那么五六分钟，这是比较多的使用场景。</p>
+<p>路上的时间大概40分钟到一个小时的样子。如何在四十分钟到一小时之内能够用新闻客户端满足读新闻的需要呢？我们判断一定要在这五六分钟下载最大的信息量，文字肯定是没有问题的，很快就能下载完，而且下载的新闻条数会很多。图片和视频来讲就会占用很大的下载流量。这个时候我们的第一需要满足的一定是用户下载的新闻条数。讲视频和图片这两部分砍掉，我们只做新闻内容，当时做这个决定我们模拟了产品的场景才做出这个决定的。这就是关于做减法的一些规则。</p>
+<p>在做产品需求评估时我们还可以找专家帮助我们做一些评审，要注意四个问题。第一，在人人构成上我们除了要找产品负责人之外也要把运营、市场和销售的负责人拉进来，他们和用户的接触也较多，对用户的了解也比较深刻，会有好的启发和建议；第二个就是说多提问题，评审的时候我们不仅要发现用户的表面需求，也要发现用户的本质需求，要多问为什么，要去理解用户行为背后的动机是什么，用户需求的痛点在哪里，这些都是通过不断的提问去提炼出来的，要保持多问为什么的习惯；第三用KANO模型去做分析，最后要用投票表决或者最后让产品负责人或老板来做这个决策，这个要定好规则。</p>
+<p>在评估需求中还有一个经常用到的就是AB测试，是指我们要两个方案，A方案和B方案去做这种比较，从实现方式和投入成本来比较，我们肯定会选择周期短成本低效果会更理想的这种方案来，所以这个就是AB方案的对比评估，最后选择性价比较高的一个方案。</p>
+<p><strong>10.怎样对需求进行优先级的评定？</strong></p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm6.webp" alt="怎样对需求进行优先级的评定"></p>
+<p>在评估完需求之后我们确定这个版本要做，我们需要对数据产品的需求进行优先级的定义，其原则就是重要性加紧急性，把需求分成四种状态：重要而且紧急、重要不紧急、紧急不重要、不紧急不重要。针对这个场景我们如何确定需求的优先级，比如说新产品还没有上线这种情况，产品还是一个从无到有的过程，这个时候是没有运营数据作为支撑的。需要从对于用户的迫切性和重要性来判断优先级是一个比较合理的方式。</p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm7.webp" alt="互联网产品需求分析与管理"></p>
+<p>首先我们要明确重要性依次是基本型需求大于期望型需求大于兴奋型需求，类似一个金字塔形式，基本型需求是最重要的，期望型需求只是作为一个第二层，兴奋型需求就是超出用户预期的，存在就加分，不存在也不受影响，这个时候最能砍掉的是兴奋型需求。在研发基本型需求的同时，我们也会做一部分期望型需求，就是重要而不紧急，还有兴奋型需求紧急而不重要，主要就是为了制造出产品的亮点和卖点，和市场竞争对手形成一个差异化，或者是品牌的风格。</p>
+<p>这里举一个案例，在1998年QQ做规划，在1999年2月份第一个版本出现，有三项功能：卡通头像、聊天室、谁在线上，对于当时而言这三种是最重要的。当时类似的有十多家，QQ不是最突出的，但是因为有卡通头像，一个用户情感的重要出口，是代表自己的一个标志性图片。当时的主要用户是70后，对迪斯尼头像比较熟悉，第二是QQ有个聊天室，以客户端形态存在，当时网页有很多聊天室，但用户体验度很低，QQ聊天室解决了用户从哪里来的问题。聊天室将早期的用户聚集起来，变成一个社区关系，会让用户在上面有更长的停留时间。同时QQ聊天室的体验比网页体验好很多，功能更强。大量用户涌进来，总的来说，是让用户满意。解决了从零关系到弱关系再到强关系的一个过程。解决了第一批种子用户的过程，所以从某种程度上来讲卡通头像是属于兴奋型需求，聊天室属于期望型需求，谁在线是用户的基本需求。</p>
+<p>！<a href="http://maomaoliang.github.io/assets/blogImg/pm8.webp">互联网产品需求分析与管理</a></p>
+<p>对于免费的已经上线的产品如何确定优先级呢?依然是重要性加迫切性原则，用户已经上线，已经有一定数据，可以通过一个公式计算重要性和迫切性。这里对基本型需求还是没有影响的，基本型需求是最底层最重要的，这个公式主要是用来计算期望型需求和兴奋型需求。</p>
+<p>公式是重要性=功能使用用户的百分比（用户使用率）<em>功能使用次数百分比（功能或内容使用率）</em>类别重要性百分比。通常情况下我们将期望型需求百分比定为50%，兴奋型需求百分比定为25%。</p>
+<p>用一个案例，假设A功能和B功能做一个比较，A功能是期望型需求 50% ，假设有100个用户，有50个使用过A功能，A功能的用户使用百分比就是50%，这50个人中使用了10000次，那么使用次数百分比就是10000除以50为200。类别重要性就是50%乘以200乘以50%，级别数值就是50；B功能是兴奋型需求，百分比为25%，100人中有30个人使用过B功能，用户百分比就是30%，30人中使用了90000次，使用次数百分比就是90000除以30，就是3000，那级别数值就是25%<em>3000</em>30=225，这样B功能的重要性就高于A功能，但这个只是用来算期望型需求和兴奋型需求的，基本型需求一定是最重要的。</p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm9.webp" alt="互联网产品需求分析与管理"></p>
+<p>对于收费型产品，更重要的是看经济效益，经济效益高且紧急的要先做，经济效益高且不紧急的后做，经济效益低但紧急的再往后做，经济效益低且不紧急的最后做。</p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm10.webp" alt="互联网产品需求分析与管理"></p>
+<p>总结，需求优先级的定义就是基本型需求是最重要的，如果完成A才能完成B的话，需求优先级A大于需求B，还有就是期望型需求和兴奋型需求是搭配使用的，在不好判断时可以通过公式来确定。</p>
+<p><strong>11.我们最后谈谈如何做需求的管理</strong></p>
+<p>接下来讲一下如何做需求的管理。</p>
+<p><img src="http://maomaoliang.github.io/assets/blogImg/pm11.webp" alt="互联网产品需求分析与管理"></p>
+<p>当需求发生变更时，工作中较为常见，如果没有需求变更也是不正常的。将需求发生变更时需要口头和书面两种形式通知到相关同学，这是一个关于需求变更的表格，分为需求编号、产品、变更前描述、变更后描述，变更原因、变更日期、变跟人和文档链接，在大公司来讲会有一个需求变更管理系统，当需求发生变更的时候就会邮件或短信便跟的相关所有人，如果创业公司没有这么好的系统，则需要相关同学主动邮件或电话通知。</p>
+<p>之后简要说一下需求管理工具，将编号、提交人、产品版本、产品模块、名称、需求描述、任务类型、需求评审完成时间、UI设计完成时间、技术评审完成时间、体测时间、需求优先级、状态、产品经理、UED设计、技术开发、测试、发布上线时间，填写完整，不要产生遗漏，因为后面会对这个版本进行追溯，追溯的时候这个表格就是我们当时工作的一个依据。</p>
+<p>相信大家经过我们这次分享可以学习到如何获取需求，如何管理需求之后，我们就可以将需求的基本问题解决。</p>
+<p>最后，非常感谢能够在馒头和大家做这样的一次产品需求管理的分享，谢谢大家！</p>
+<center>The END</center>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PM/" rel="tag">#PM</a>
+          
+            <a href="/tags/产品/" rel="tag">#产品</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/11/other.TestFlashMusic/" rel="next" title="和网易云音乐在一起">
+                <i class="fa fa-chevron-left"></i> 和网易云音乐在一起
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/17/MD.MarkdownDemo4/" rel="prev" title="Markdown Demo 4">
+                Markdown Demo 4 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://maomaoliang.github.io/assets/blogImg/mamaoliang.jpg" alt="毛毛亮" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">毛毛亮</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">44</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/maomaoliang" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1800376583?from=myfollow_group&is_all=1" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/pinkpig" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.google.com/" target="_blank">Google</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">毛毛亮</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>

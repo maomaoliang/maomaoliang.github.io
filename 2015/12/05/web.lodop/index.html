@@ -1,0 +1,857 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Lodop," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="腹有诗书气自华的毛毛亮" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="Lodop，前端调用的打印控件。优点：简单，免费；缺点：写个好点的文档有这么难吗？我给钱还不行吗。">
+<meta name="keywords" content="Lodop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lodop使用">
+<meta property="og:url" content="http://maomaoliang.github.io/2015/12/05/web.lodop/index.html">
+<meta property="og:site_name" content="腹有诗书气自华的毛毛亮">
+<meta property="og:description" content="Lodop，前端调用的打印控件。优点：简单，免费；缺点：写个好点的文档有这么难吗？我给钱还不行吗。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2016-06-02T07:46:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lodop使用">
+<meta name="twitter:description" content="Lodop，前端调用的打印控件。优点：简单，免费；缺点：写个好点的文档有这么难吗？我给钱还不行吗。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Lodop使用 | 腹有诗书气自华的毛毛亮 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?34f089c6238a8954f7a11596c82077f0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">腹有诗书气自华的毛毛亮</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Change myself or Keep myself</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'hdUL6xonNozsy_ewSMxF','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Lodop使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-05T23:04:38+08:00" content="2015-12-05">
+              2015-12-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Skills/" itemprop="url" rel="index">
+                    <span itemprop="name">Skills</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>Lodop，前端调用的打印控件。优点：简单，免费；缺点：写个好点的文档有这么难吗？我给钱还不行吗。</p>
+<a id="more"></a>
+<h3 id="几点注意"><a href="#几点注意" class="headerlink" title="几点注意"></a>几点注意</h3><ol>
+<li><p>SET_PRINT_PAGESIZE在不链接打印机的情况下，预览是不会变化的，一定要链接打印机先</p>
+</li>
+<li><p><strong>chrome不支持</strong></p>
+<p> <strong>方案：</strong>chrome://flags/#enable-npapi-&gt;开启npapi</p>
+</li>
+</ol>
+<ul>
+<li><p>PRINT_INIT(strTakeName)</p>
+<p>  Lodop会根据该名记忆相关的打印设置、打印维护信息</p>
+</li>
+<li><p>SET_PRINT_PAGESIZE(intOrient, PageWidth,PageHeight,strPageName)</p>
+<p>  设定纸张大小</p>
+<p>  <strong>intOrient</strong>：打印方向</p>
+<ol>
+<li>纵(正)向打印，固定纸张</li>
+<li>横向打印，固定纸张</li>
+<li>纵(正)向打印，宽度固定，高度按打印内容的高度自适应</li>
+<li><p>自行选择或按打印机缺省设置</p>
+<p><strong>PageWidth</strong>：纸张宽度</p>
+<p><strong>PageHeigh</strong>t： 固定纸张时设定纸张高；高度自适应时设定纸张底边的空白高。</p>
+<p><strong>strPageName</strong>： 宽或高无效时，strPageName才起作用</p>
+<p><em>例子：</em></p>
+<p><code>LODOP. SET_PRINT_PAGESIZE (1,2100,2970,&quot;&quot;);</code><br>2100mm，2970mm，默认毫米</p>
+</li>
+</ol>
+</li>
+<li><p>ADD_PRINT_HTM(Top,Left,Width,Height,strHtmlContent)</p>
+<p>  增加超文本打印项(普通模式)</p>
+<p>  <strong>Top</strong>：所在纸张内的上边距,整数时缺省长度单位为px</p>
+<p>  <strong>Left</strong>：所在纸张内的左边距,整数时缺省长度单位为px</p>
+<p>  <strong>Width</strong>：打印区域的宽度，整数或字符型，整数时缺省长度单位为px。</p>
+<p>  <strong>Height</strong>：打印区域的高度，整数或字符型，整数时缺省长度单位为px。</p>
+<p>  <strong>strHtmlContent</strong>：超文本代码内容，字符型，未限制长度。可以是一个完整的页面超文本代码，或者是一个代码段落，也可以是URL:web地址形式的URL地址。</p>
+<p>  <strong>**建议或要求</strong>：要求在打印初始化后调用，建议在画线类函数之后调用。</p>
+<p>  <em>例子</em>：</p>
+<p>  <code>举例一：LODOP. ADD_PRINT_HTM (0,0, 300,100,&quot;&lt;hr&gt;&lt;font size=5&gt;hello &lt;/font&gt;&quot;);</code> </p>
+<p>  <code>举例二：LODOP. ADD_PRINT_HTM (&quot;0%&quot;,&quot;0%&quot;,&quot;100%&quot;,&quot;100%&quot;,&quot;URL:http://www.baidu.com&quot;);</code> </p>
+</li>
+</ul>
+<ul>
+<li><p>ADD_PRINT_TABLE(Top,Left,Width,Height,strHtml)</p>
+<p>  增加表格打印项（超文本模式）</p>
+<p>  用超文本增加一个表格打印项，设定该表格在每个纸张内的位置和区域大小。打印时只输出首个页面元素table的显示内容，当table内包含thead或tfoot时，一旦表格被分页，则每个打印页都输出表头(thead)或表尾(tfoot)。</p>
+<p>  <strong>Top</strong>：表格数据头(页头thead)在纸张内的上边距，整数或字符型，整数时缺省长度单位为px。</p>
+<p>  <strong>Left</strong>：表格数据头(页头thead)在纸张内的左边距，整数或字符型</p>
+<p>  <strong>Width</strong>：打印区域的宽度，整数或字符型，整数时缺省长度单位为px。</p>
+<p>  <strong>Height</strong>：表格数据体(tbody)区域的高度，整数或字符型，整数时缺省长度单位为px。</p>
+<p>  <strong>strHtml</strong>：超文本代码内容，字符型，未限制长度。</p>
+<p>  <strong>建议或要求</strong>：要求在打印初始化后调用，建议在画线类函数之后调用。</p>
+</li>
+<li><p>SET_PRINT_STYLE(strStyleName,varStyleValue)</p>
+<p>  设置打印项风格</p>
+<p>  功能：设置打印项的输出风格，成功执行该函数，此后再增加的打印项按此风格输出。</p>
+<p>  <strong>常用</strong>：</p>
+<p>  LODOP.SET_PRINT_STYLE(“FontSize”,11);<strong>注意此语法仅仅支持纯文本打印项</strong></p>
+<p>  “<strong>HOrient</strong>”：设定打印项在纸张内的水平位置锁定方式。</p>
+<p>  HOrient的值：数字型，0–左边距锁定 1–右边距锁定 2–水平方向居中 3–左边距和右边距同时锁定（中间拉伸），缺省值是0。</p>
+<p>  LODOP.SET_PRINT_STYLE(“HOrient”,2);</p>
+</li>
+</ul>
+<pre><code>“**VOrient**”：设定打印项在纸张内的垂直位置锁定方式。
+
+VOrient的值：数字型，0--上边距锁定 1--下边距锁定 2--垂直方向居中 3--上边距和下边距同时锁定（中间拉伸），缺省值是0。
+
+LODOP.SET_PRINT_STYLE(&quot;VOrient&quot;,2);
+
+“ItemType”：设定打印项的基本属性。
+
+ItemType的值：数字型，0--普通项 1--页眉页脚 2--页号项 3--页数项 4--多页项 
+
+缺省（不调用本函数时）值0。普通项只打印一次；
+
+页眉页脚项则每页都在固定位置重复打印；
+
+页号项和页数项是特殊的页眉页脚项，其内容包含当前页号和全部页数；
+
+多页项每页都打印，直到把内容打印完毕，打印时在每页上的位置和区域大小固定一样（多页项只对纯文本有效）在页号或页数对象的文本中，有两个特殊控制字符：“#”特指“页号”，“&amp;”特指“页数”。
+</code></pre><ul>
+<li><p>SET_PRINT_STYLEA(varItemNameID, strStyleName,varStyleValue)</p>
+<p>  (扩展型) 设置打印项风格A</p>
+<p>  功能：类似函数SET_PRINT_ STYLE的功能，二者的区别是本函数只对单个打印项有效。</p>
+<p>  <strong>varItemNameID</strong></p>
+<p>  要设置的目标项序号或项目名，数字型或字符型。</p>
+<p>  <strong>数字型时</strong>，表示是序号，以其增加的先后自然顺序为准，从1开始，所有打印对象都参与排序，包括超文本、纯文本、图片、图线、图表、条码等。</p>
+<p>  如果序号为0，代表当前（最后加入的那个）数据项；如果序号是负数，代表前面加入的数据项，该值为前移个数偏移量。</p>
+<p>  <strong>字符型时</strong>，是对象的类名或代表部分对象的关键字。</p>
+<p>  <strong>关键字</strong>如下：</p>
+<ol>
+<li><p>Selected-代表在设计界面上用鼠标所选的所有对象；</p>
+</li>
+<li><p>unSelected-代表在设计界面上所有没有被鼠标选择的对象；</p>
+</li>
+<li><p>All-代表所有正常对象；</p>
+</li>
+<li><p>First-代表第一个正常对象；</p>
+</li>
+<li><p>Last-代表最后一个正常对象；</p>
+</li>
+<li><p>不是关键字的字符一般是类名，类名可以在ADD_PRINT_TEXTA</p>
+</li>
+<li><p>加入纯文本时用strItemName来声明，也可以在设计界面用菜单功能（Set TEXT Item Name）来设置。</p>
+<p>“LinkedItem”：设置关联内容项的项目编号</p>
+<p>整数或字符型，字符型代表被关联项的项目名，整数代表被关联项的序号，如果是负数，代表当前对象，例如-1代表前一个对象，-2代表前面隔一个对象，使用-1时可以用同一个语句连续顺序关联一串对象。</p>
+<p>内容项与别人关联后，会紧跟被关联者之后打印，位置和区域大小随被关联项而定，此时其Top和left不再是上边距和左边距，而是与关联项的间隔空隙及左边距偏移。</p>
+<p>如果关联者是页眉页脚对象，那么不会每页输出，仅与被关联对象同页输出。此时输出的位置与被关联对象的位置相对固定，也就是当上边距小于被关联对象的上边距时，那么其起点位置会与被关联者的上边线保持设计时的距离，否则与被关联对象的下边线保持设计时的距离。</p>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code>**建议或要求**：
+
+打印初始化后、增加打印项之后调用本函数。
+
+这个貌似不能调字体
+
+
+1. 举例一：LODOP.SET_PRINT_STYLEA(3,&quot;FontName&quot;,&quot;隶书&quot;); 设置第3个内容项的字体为隶书。
+
+2. 举例二：LODOP.SET_PRINT_STYLEA(0,&quot;PageIndex&quot;,&quot;first&quot;);设置刚加入的这个内容只在首页输出
+</code></pre></span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Lodop/" rel="tag">#Lodop</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/05/knowlege.知识管理/" rel="next" title="知识管理">
+                <i class="fa fa-chevron-left"></i> 知识管理
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/05/life.关于简历的想法/" rel="prev" title="关于简历的想法">
+                关于简历的想法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://maomaoliang.github.io/assets/blogImg/mamaoliang.jpg" alt="毛毛亮" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">毛毛亮</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">44</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/maomaoliang" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1800376583?from=myfollow_group&is_all=1" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/pinkpig" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.google.com/" target="_blank">Google</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#几点注意"><span class="nav-number">1.</span> <span class="nav-text">几点注意</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">毛毛亮</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
