@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo站内搜索]]></title>
     <url>%2F2018%2F10%2F13%2Fhexo%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%2F</url>
-    <content type="text"><![CDATA[参考资料text url 安装 hexo-generator-search1$ npm install hexo-generator-search --save 安装 hexo-generator-searchdb$ npm install hexo-generator-searchdb –save 启用搜索编辑 站点配置文件，新增以下内容到任意位置：search: path: search.xml field: post format: html limit: 10000 就是这么简单！]]></content>
+    <content type="text"><![CDATA[参考资料text url 安装 hexo-generator-search1$ npm install hexo-generator-search --save 安装 hexo-generator-searchdb1$ npm install hexo-generator-searchdb --save 启用搜索编辑 站点配置文件，新增以下内容到任意位置： 12345search: path: search.xml field: post format: html limit: 10000 就是这么简单！]]></content>
       <categories>
         <category>skills</category>
       </categories>
