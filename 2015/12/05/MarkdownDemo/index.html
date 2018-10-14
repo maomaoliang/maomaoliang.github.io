@@ -607,7 +607,7 @@ This is an H2
       <div>
         <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/images/wechatqcode.jpg" alt="毛毛亮 wechat" style="width: 200px; max-width: 100%;"/>
-    <div>ex. subscribe to my blog by scanning my public wechat account</div>
+    <div>如果喜欢我，欢迎订阅我的公众号，绝不更新~</div>
 </div>
 
       </div>
@@ -624,21 +624,21 @@ This is an H2
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="毛毛亮 微信支付"/>
+        <img id="wechat_qr" src="/images/reward/wechatpay_1.jpg" alt="毛毛亮 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="毛毛亮 支付宝"/>
+        <img id="alipay_qr" src="/images/reward/alipay_1.jpg" alt="毛毛亮 支付宝"/>
         <p>支付宝</p>
       </div>
     
 
     
       <div id="bitcoin" style="display: inline-block">
-        <img id="bitcoin_qr" src="/images/bitcoin.jpg" alt="毛毛亮 比特币"/>
+        <img id="bitcoin_qr" src="/images/reward/bitcoin_1.jpg" alt="毛毛亮 比特币"/>
         <p>比特币</p>
       </div>
     
@@ -901,7 +901,7 @@ This is an H2
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
+  <span class="with-love" id="animate" >
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">毛毛亮</span>
@@ -927,6 +927,52 @@ This is an H2
 
 
 
+<!-- 新增访客统计代码 -->
+<div class="busuanzi-count">
+    <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      访问用户： <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
+    </span>
+    <div class="powered-by"></div>
+    <span class="site-uv">
+      <i class="fa fa-eye"></i>
+      访问次数： <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
+    </span>
+    <!-- 博客字数统计 -->
+    <span class="site-pv">
+      <i class="fa fa-pencil"></i>
+      博客全站共： <span class="post-count">15.7k</span> 字
+    </span>
+</div>
+<!-- 新增访客统计代码 END-->
+
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/04/2015 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        console.log(grt);
+        console.log(now);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; 
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); 
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); 
+        if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); 
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+
+        document.getElementById("timeDate").innerHTML = "这个博客已经运行了 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 天 " + snum + " 秒";
+    }
+  setInterval("createtime()",250);
+</script>
+<!-- 在网页底部添加网站运行时间 END-->
         
 
 
@@ -975,6 +1021,8 @@ This is an H2
 
 
 
+  
+
 
 
 
@@ -1000,6 +1048,11 @@ This is an H2
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1392,3 +1445,6 @@ This is an H2
 
 </body>
 </html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
