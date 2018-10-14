@@ -5,7 +5,7 @@
     <url>%2F2018%2F10%2F13%2Fhexo%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%2F</url>
     <content type="text"><![CDATA[参考资料hexo站内搜索教程hexo站内搜索教程作者亲自教程next主题官网next最新下载 安装 hexo-generator-search1$ npm install hexo-generator-search --save 安装 hexo-generator-searchdb1$ npm install hexo-generator-searchdb --save 站点配置文件配置启用搜索编辑 站点配置文件，新增以下内容到任意位置： 12345search: path: search.xml field: post format: html limit: 10000 主题配置文件配置添加搜索按钮123456789local_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 # unescape html strings to the readable one unescape: false 就是这么简单！]]></content>
       <categories>
-        <category>skills</category>
+        <category>技能</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -72,7 +72,7 @@
     <url>%2F2015%2F12%2F11%2F%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B5%8C%E5%85%A5%2F</url>
     <content type="text"><![CDATA[是时候展现真正的力量了，今天突发奇想能否在Mrakdown中插入外链Flash播放器呢？Markdown实质上就是HTML，应该能，MD 想想有点小激动呢。 说时迟那时快，第一时间想到的就是我最爱的网易播放器，真的有插件呢.看文档猛戳这里 来来来，释放我的洪荒之力吧. 经过测试 1.iframe播放器在PC和移动端的浏览器上均可以正常播放。 2.flash播放器在移动端无法正常显示，没有插件。 网易播放器插件效果 1.最爱的单曲：朴树–在希望的田野上 2.轻音乐歌单：那些你熟悉却又不知道名字的轻音乐** PS：1.PC看上去效果不错噶。明天周六，晚上电影院《火星救援》走起，See you agin …Bye Bye 2.移动端（chrome）并不支持flash，效果感人，呵呵..Bye To be continued…]]></content>
       <categories>
-        <category>skills</category>
+        <category>技能</category>
       </categories>
       <tags>
         <tag>Test</tag>
@@ -107,7 +107,7 @@
     <url>%2F2015%2F12%2F05%2F%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%2F</url>
     <content type="text"><![CDATA[必须先搞清楚一点：知识管理不是信息管理！ 收集信息：形成信息库1.RSS阅读器 鲜果 feedly PS：博客选择：参考地址1 2.网页 chrome书签 360极速浏览器书签 网页收集工具： pocket、instapper、evernote、为知笔记 3.印象笔记与为知笔记的取舍 吸收知识：形成知识库，知识地图实践应用反馈总结： 知识地图完善、修复日常信息记录还要继续改….]]></content>
       <categories>
-        <category>Thoughts</category>
+        <category>思考</category>
       </categories>
       <tags>
         <tag>知识管理</tag>
@@ -118,7 +118,7 @@
     <url>%2F2015%2F12%2F05%2F%E7%A7%9F%E6%88%BF%E6%8A%80%E5%B7%A7%2F</url>
     <content type="text"><![CDATA[信息获取1.信息到底是业主本人，还是中介公司 2.有没有经纪人发帖的标识 3.房源信息的详尽程度 4.实际租房价格与网上报价的差异 看房1.表现出租房的欲望 2.不刻意中意，不刻意挑刺，回去考虑 3.聊天，熟悉房东的风格，性格 签约1.表现出对房子的爱惜 2.签约 &nbsp;&nbsp;&nbsp;&nbsp;试用家用电器&nbsp;&nbsp;&nbsp;&nbsp;要求房产证/身份证&nbsp;&nbsp;&nbsp;&nbsp;抄水电燃气表，记录在合同中]]></content>
       <categories>
-        <category>DailyLife</category>
+        <category>生活</category>
       </categories>
       <tags>
         <tag>租房</tag>
