@@ -401,6 +401,34 @@
 
       <h2 class="post-title">
         
+            <a class="post-title-link" href="/2015/12/29/SublimeText常用技巧/" itemprop="url">
+              
+                <span itemprop="name">Sublime Text 3 使用技巧</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-12-29T11:02:00+08:00"
+              content="2015-12-29" >
+          12-29
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
             <a class="post-title-link" href="/2015/12/14/腾讯产品法则/" itemprop="url">
               
                 <span itemprop="name">做产品需求最全的方法都在这了丨腾讯产品法则</span>
@@ -414,6 +442,118 @@
               datetime="2015-12-14T15:30:00+08:00"
               content="2015-12-14" >
           12-14
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2015/12/11/网易云音乐嵌入/" itemprop="url">
+              
+                <span itemprop="name">网易云音乐嵌入</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-12-11T17:01:38+08:00"
+              content="2015-12-11" >
+          12-11
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2015/12/10/排序算法汇总/" itemprop="url">
+              
+                <span itemprop="name">排序算法汇总</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-12-10T08:42:38+08:00"
+              content="2015-12-10" >
+          12-10
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2015/12/05/MarkdownDemo/" itemprop="url">
+              
+                <span itemprop="name">Markdown Demo</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-12-05T23:04:38+08:00"
+              content="2015-12-05" >
+          12-05
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2015/12/02/我的软件/" itemprop="url">
+              
+                <span itemprop="name">我的软件</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-12-02T23:04:38+08:00"
+              content="2015-12-02" >
+          12-02
         </time>
       </div>
 
@@ -502,7 +642,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1087,93 +1227,6 @@
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
                   return resultRight.searchTextCount - resultLeft.searchTextCount;
                 } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/clicklove.js"></script>      } else if (resultLeft.hitCount !== resultRight.hitCount) {
                   return resultRight.hitCount - resultLeft.hitCount;
                 } else {
                   return resultRight.id - resultLeft.id;
