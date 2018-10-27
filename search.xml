@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[怎样求最优解-交互设计中的理性思考]]></title>
+    <url>%2F2018%2F10%2F24%2F%E6%80%8E%E6%A0%B7%E6%B1%82%E6%9C%80%E4%BC%98%E8%A7%A3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E4%B8%AD%E7%9A%84%E7%90%86%E6%80%A7%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[文章主旨 利用一套求最优解的思维框架，来进行交互设计。 一、文章出处KM论坛—怎样求最优解-交互设计中的理性思考 二、关键词问题解决模型 MECE 二维矩阵图 格式塔原理 三、核心观点3.1、交互设计是解决问题，而解决问题有固定的过程过程如下：1、定义问题：哪些因素造成了目标与现状之间的差距2、推导所有解：减少差距的所有可能情况与方案3、列出限制条件：时间、人力、成本等4、选择最优解：符合限制条件下的最优解。 经验告诉我们，最难的【推导所有解】和【选择最优解】 3.2、推导所有解3.2.1、推导所有解—是非题客观题。问题有且仅有两个解答，比如有无、是否、正反。比如，用户充错DNF点券充错没有有效提单渠道，是否要增加自助工具？问题的解是唯一的。 3.2.3、推导所有解—多因素问题客观题。问题有多个解决方案是，要【拆解】问题，直到把他分解成一个个【是非题】 MECE原则：相互独立、完全穷尽。 基于上述原则，对问题进行拆解,可以采用3种常用的逻辑拆解：时间、结构、重要性 时间：表示“时间先后”顺序，比如“过去、现在、未来”、“童年、青少年、中老年”等等 结构：表示“整体与部分”的逻辑关系，比如具体实物的构成、地理位置的构成、抽象概念的构成 重要性：表示“同类事物归为一类”的逻辑关系，这种是找到一类事物的共性特点，再按照共性特点体现的强弱组织论点的顺序。 例子：如果现在产品遇到了一个问题，某个游戏的支付页面转化率比同期低了。那么我们要怎么解决问题 3.2.4、推导所有解—无穷解问题主观题。考虑较多主观因素，解无穷，多是主观题，如【我想清晰一点】，【我想突出XXX】 例子，目前XXX首页没达到产品突出重点业务的诉求。 问题的目标是突出重点，但是解是无穷的，因为到底多突出才算满足需求呢？ 引入【二维矩阵图】思维工具， 重点业务和其他业务是反比例，上半区重点内容多于其他内容，下半区反之。 基于上图，可以先制定一部分关键方案，然后在曲线上选择一些关键点。 根据格式塔原理（整体性原则），人们会在上述4个解之间，补充相邻的解，直到选择出最优解。 3.3、选择最优解3.3.1、是非题解有且只有一个 3.3.2、多因素问题基于限制条件，选择最好的解即可。因为限制条件是可量化的，比如页面打开要【快】，用户财产要【安全】 3.3.3、无穷解问题无穷解的关键在于选择权重，因为限制条件是不可量化的，比如【突出】、【加强】等主观条件。 在这种情况下，要借助一些测量工具去尽可能的量化。比如 1、拿产品方案给让用户打分（用户净推荐值NFS作为条件）2、用户可用性测试评分（任务完成度、时间等因素加权得分）3、内部专家评审（决策权重作为条件） 量化后的最好结果即为最优解。 四、实例【微信钱包-腾讯充值项目改版】作者举的这个例子非常清楚，细节满满，思路也很不错。 由于篇幅过长，请查看原文进行阅读。]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mark一下，终于解决了办公网络发布文章的问题]]></title>
     <url>%2F2018%2F10%2F23%2FMark%E4%B8%80%E4%B8%8B%EF%BC%8C%E5%85%AC%E5%8F%B8%E5%8A%9E%E5%85%AC%E7%BD%91%E7%BB%9C%E5%8F%AF%E4%BB%A5%E5%8F%91%E5%B8%83%2F</url>
-    <content type="text"><![CDATA[yo yo yo , I have solved the fucking oa-net…marked 步骤1：修改站点配置文件修改的depoly的配置即可. 修改站点配置文件.config.yml 原配置： 1234deploy: type: git repository: git@github.com:maomaoliang/maomaoliang.github.io.git branch: master 修改后配置： 1234deploy: type: git repository: https://github.com/maomaoliang/maomaoliang.github.io.git branch: master 总结一句话： 办公网络不支持：git 协议、ssh 方式 clone repo，需要用 https 协议，并且设置公司 http 代理。 步骤2：分别设置npm和git的代理未完待续…]]></content>
+    <content type="text"><![CDATA[yo yo yo , I have solved the fucking oa-net…marked 修改的depoly的配置即可. 修改站点配置文件.config.yml 原配置： 1234deploy: type: git repository: git@github.com:maomaoliang/maomaoliang.github.io.git branch: master 修改后配置： 1234deploy: type: git repository: https://github.com/maomaoliang/maomaoliang.github.io.git branch: master 总结一句话： 办公网络不支持：git 协议、ssh 方式 clone repo，需要用 https 协议，并且设置公司 http 代理。 所以,git测试肯定是不会通的。 1$ ssh git@github.com PS：根本不需要设置git代理~]]></content>
       <categories>
         <category>技能</category>
       </categories>
@@ -16,10 +27,10 @@
     <url>%2F2018%2F10%2F21%2F%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%2C%E4%B8%8D%E5%8F%AA%E6%98%AF%E7%94%BB%E5%87%BA%E6%9D%A5%2F</url>
     <content type="text"><![CDATA[一、文章出处KM论坛—交互设计 不只是画出来 二、关键词恰到好处的行为指引 时间流对话 文化影响 fogg行为模型 产品记忆点 模拟现实 &quot;诗意&quot;的设计 三、为什么有这篇文章？交互设计除了是一份黑白灰的线框图交付物，还有什么价值可以发挥？ 本人讲的不是常见的交互设计原理，而是对交互设计其他价值的思考。 四、主要观点4.1 恰到好处的行为指引当用户做出行为操作时，可以给予其正确的、恰到好处下一步行为的指引。 例子： 知乎搜索“自杀”断网时，微信的推荐的联网方法 4.2 时间流对话用户与产品之间，除了【用户操作-系统反馈】这样的主动行为，还有【场景变换-系统自动反馈】，时间流就是其中一种场景的变化。 例子： 网易云音乐年度听歌报告王者荣耀健康系统的提醒 4.3 文化影响经过长期对用户行为的影响，可以达到影响文化的作用。 例子： 微信红包与实物红包支付宝与现金微信乘车码与公交卡 4.4 fogg行为模型模型三要素：动机motivation、能力ability、诱发因素trigger。可以用 B(behavior)=mat 帮助记忆。 对模型的解释：在关键场景中，在用户能力所及范围内，帮助他完成需求目标。 从上述三个要素，可以演化出多个设计原则： 1、在基础需求满足的情况下，尽可能的找出更多的动机点，满足不同关键场景的需求。 如，滴滴打车的一键报警 2、尽可能的减低用户使用产品的学习成本、使用成本。 如，新手指引、语音代替文本发送消息 4.5 产品记忆点帮助形成产品的品牌、培养用户行为 例子： path的+号圆形按钮b站弹幕微信摇一摇陌陌查找附近陌生人 4.6 模拟现实产品使用中，模拟现实中的世界，带来自然世界的亲切感。 例子： 网易云音乐黑胶唱片播放界面嘀嘀打车等车来时，实时显示司机的小车图标天气软件中对雨雪风等天气的模拟 4.7 “诗意的”设计诗意的，我认为就是设计师自己的创意、灵感、态度。满足产品可用、易用、好用之外的东西，俗称逼格:) 例子： 腾讯电脑管家加速时，一飞冲天的小火箭锤子计时器的下拉手环，计时长短不同，反弹力度不同]]></content>
       <categories>
-        <category>读书笔记</category>
+        <category>笔记</category>
       </categories>
       <tags>
-        <tag>读书笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -125,17 +136,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[租房技巧]]></title>
-    <url>%2F2015%2F12%2F05%2F%E7%A7%9F%E6%88%BF%E6%8A%80%E5%B7%A7%2F</url>
-    <content type="text"><![CDATA[信息获取1.信息到底是业主本人，还是中介公司 2.有没有经纪人发帖的标识 3.房源信息的详尽程度 4.实际租房价格与网上报价的差异 看房1.表现出租房的欲望 2.不刻意中意，不刻意挑刺，回去考虑 3.聊天，熟悉房东的风格，性格 签约1.表现出对房子的爱惜 2.签约 &nbsp;&nbsp;&nbsp;&nbsp;试用家用电器&nbsp;&nbsp;&nbsp;&nbsp;要求房产证/身份证&nbsp;&nbsp;&nbsp;&nbsp;抄水电燃气表，记录在合同中]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>租房</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[知识管理]]></title>
     <url>%2F2015%2F12%2F05%2F%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%2F</url>
     <content type="text"><![CDATA[必须先搞清楚一点：知识管理不是信息管理！ 收集信息：形成信息库1.RSS阅读器 鲜果 feedly PS：博客选择：参考地址1 2.网页 chrome书签 360极速浏览器书签 网页收集工具： pocket、instapper、evernote、为知笔记 3.印象笔记与为知笔记的取舍 吸收知识：形成知识库，知识地图实践应用反馈总结： 知识地图完善、修复日常信息记录还要继续改….]]></content>
@@ -144,6 +144,17 @@
       </categories>
       <tags>
         <tag>知识管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[租房技巧]]></title>
+    <url>%2F2015%2F12%2F05%2F%E7%A7%9F%E6%88%BF%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[信息获取1.信息到底是业主本人，还是中介公司 2.有没有经纪人发帖的标识 3.房源信息的详尽程度 4.实际租房价格与网上报价的差异 看房1.表现出租房的欲望 2.不刻意中意，不刻意挑刺，回去考虑 3.聊天，熟悉房东的风格，性格 签约1.表现出对房子的爱惜 2.签约 &nbsp;&nbsp;&nbsp;&nbsp;试用家用电器&nbsp;&nbsp;&nbsp;&nbsp;要求房产证/身份证&nbsp;&nbsp;&nbsp;&nbsp;抄水电燃气表，记录在合同中]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>租房</tag>
       </tags>
   </entry>
   <entry>
