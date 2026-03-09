@@ -60,15 +60,14 @@ symbols_count_time:
   item_text_post: true
   item_text_total: true
 
-# [E] 不蒜子访问量统计
+# Google Analytics 4
+google_analytics:
+  tracking_id: G-H1DQE10TXJ
+  only_pageview: false
+
+# [E] 不蒜子访问量统计（已替换为 GA4）
 busuanzi_count:
-  enable: true
-  total_visitors: true
-  total_visitors_icon: fa fa-user
-  total_views: true
-  total_views_icon: fa fa-eye
-  post_views: true
-  post_views_icon: far fa-eye
+  enable: false
 
 # [K] Mermaid 图表支持
 mermaid:
