@@ -80,10 +80,6 @@ mermaid:
 # [M] 图片灯箱 FancyBox - 点击图片放大查看
 fancybox: true
 
-# [H] 看板娘 Live2D
-live2d:
-  enable: false
-
 # 创意共用协议
 creative_commons:
   license: by-nc-sa
