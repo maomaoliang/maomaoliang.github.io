@@ -1,6 +1,8 @@
 ---
 title: "5分钟搭建HEXO博客"
 date: 2018-04-22T03:27:00+08:00
+categories:
+  - 技术笔记
 tags:
   - Hexo
 ---

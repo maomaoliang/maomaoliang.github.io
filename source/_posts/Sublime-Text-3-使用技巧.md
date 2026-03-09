@@ -1,6 +1,8 @@
 ---
 title: "Sublime Text 3 使用技巧"
 date: 2015-12-29T11:02:00+08:00
+categories:
+  - 技术笔记
 tags:
   - Sublime Text 3
 ---

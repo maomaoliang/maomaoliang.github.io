@@ -1,6 +1,8 @@
 ---
 title: "Markdown语法"
 date: 2015-12-05T23:04:38+08:00
+categories:
+  - 技术笔记
 tags:
   - Markdown
 ---

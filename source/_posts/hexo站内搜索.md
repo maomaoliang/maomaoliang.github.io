@@ -1,6 +1,8 @@
 ---
 title: "hexo站内搜索"
 date: 2018-10-13T22:45:23+08:00
+categories:
+  - 技术笔记
 tags:
   - hexo
 ---
