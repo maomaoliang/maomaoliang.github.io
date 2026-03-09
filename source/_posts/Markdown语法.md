@@ -1,10 +1,11 @@
 ---
-title: "Markdown语法"
-date: 2015-12-05T23:04:38+08:00
+title: Markdown语法
 categories:
   - 技术笔记
 tags:
   - Markdown
+abbrlink: 3c50d03d
+date: 2015-12-05 15:04:38
 ---
 
 [Markdown 语法快速入门](https://www.appinn.com/markdown/basic.html)

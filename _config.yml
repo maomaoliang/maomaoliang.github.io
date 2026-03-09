@@ -14,7 +14,8 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://maomaoliang.github.io
-permalink: :year/:month/:day/:title/
+# [1] 文章短链 - 避免中文路径乱码，SEO 友好
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,6 +98,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# [1] abbrlink 短链配置
+abbrlink:
+  alg: crc32    # 算法：crc16 / crc32
+  rep: hex      # 进制：dec(十进制) / hex(十六进制)
+  drafts: false
 
 # [C] 字数统计 & 阅读时长
 symbols_count_time:

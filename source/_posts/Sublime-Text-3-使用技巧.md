@@ -1,10 +1,11 @@
 ---
-title: "Sublime Text 3 使用技巧"
-date: 2015-12-29T11:02:00+08:00
+title: Sublime Text 3 使用技巧
 categories:
   - 技术笔记
 tags:
   - Sublime Text 3
+abbrlink: 33c80633
+date: 2015-12-29 03:02:00
 ---
 
 一直在用Sublime Text 3 ，真的喜欢，但是在win10下面状况不断，还有家里的网是让人愤怒的长城宽带，根本无法正常联网安装`control package`。

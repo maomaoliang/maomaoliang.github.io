@@ -1,10 +1,11 @@
 ---
-title: "Mark一下，终于解决了办公网络发布文章的问题"
-date: 2018-10-23T21:11:00+08:00
+title: Mark一下，终于解决了办公网络发布文章的问题
 categories:
   - 技术笔记
 tags:
   - Hexo
+abbrlink: 7cc385ad
+date: 2018-10-23 13:11:00
 ---
 
 yo yo yo ,  I have solved the fucking oa-net…marked

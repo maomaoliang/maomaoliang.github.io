@@ -1,10 +1,11 @@
 ---
-title: "5分钟搭建HEXO博客"
-date: 2018-04-22T03:27:00+08:00
+title: 5分钟搭建HEXO博客
 categories:
   - 技术笔记
 tags:
   - Hexo
+abbrlink: cf7806b
+date: 2018-04-21 19:27:00
 ---
 
 **说明：**

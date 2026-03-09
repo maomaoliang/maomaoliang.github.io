@@ -79,6 +79,18 @@ mermaid:
 # [M] 图片灯箱 FancyBox - 点击图片放大查看
 fancybox: true
 
+# [2] 图片懒加载 - 滚动到可见区域才加载，提升首屏速度
+lazyload: true
+
+# [3] 相关文章推荐 - 基于标签匹配，文章底部自动推荐
+related_posts:
+  enable: true
+  icon: fa fa-signs-post
+  max_count: 5
+
+# [4] 中英文自动加空格 (Pangu) - 排版更美观
+pangu: true
+
 # 创意共用协议
 creative_commons:
   license: by-nc-sa

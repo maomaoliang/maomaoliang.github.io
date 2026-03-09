@@ -1,10 +1,11 @@
 ---
-title: "hexo站内搜索"
-date: 2018-10-13T22:45:23+08:00
+title: hexo站内搜索
 categories:
   - 技术笔记
 tags:
   - hexo
+abbrlink: 398017c7
+date: 2018-10-13 14:45:23
 ---
 
 ### 参考资料
