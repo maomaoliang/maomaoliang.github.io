@@ -3,8 +3,8 @@
 # 使用 Mist 风格
 scheme: Mist
 
-# 关闭暗色模式
-darkmode: false
+# [B] 暗色模式 - 读者可切换深色主题
+darkmode: true
 
 # 站点图标
 favicon:
@@ -38,12 +38,51 @@ local_search:
 codeblock:
   copy_button:
     enable: true
+  # [D] Mac 风格代码块 - 左上角红黄绿三个小圆点
+  style: mac
 
 # 返回顶部
 back2top:
   enable: true
   sidebar: false
   scrollpercent: true
+
+# [A] 阅读进度条 - 页面顶部显示彩色进度条
+reading_progress:
+  enable: true
+  position: top
+  color: "#37c6c0"
+  height: 3px
+
+# [C] 文章字数统计 & 阅读时长
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true
+
+# [E] 不蒜子访问量统计
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye
+
+# [K] Mermaid 图表支持
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark
+
+# [M] 图片灯箱 FancyBox - 点击图片放大查看
+fancybox: true
+
+# [H] 看板娘 Live2D
+live2d:
+  enable: false
 
 # 创意共用协议
 creative_commons:
@@ -65,3 +104,7 @@ giscus:
   input_position: bottom
   theme: preferred_color_scheme
   lang: zh-CN
+
+# [I] 鼠标点击爱心特效 + [H] 看板娘
+custom_file_path:
+  bodyEnd: source/_data/body-end.njk
