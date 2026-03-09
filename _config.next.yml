@@ -1,0 +1,67 @@
+# NexT 主题配置（覆盖默认配置）
+
+# 使用 Mist 风格
+scheme: Mist
+
+# 关闭暗色模式
+darkmode: false
+
+# 站点图标
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+
+# 头像
+avatar:
+  url: /images/avatar.gif
+  rounded: true
+  rotated: false
+
+# 菜单
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+
+# 社交链接
+social:
+  GitHub: https://github.com/maomaoliang || fab fa-github
+
+# 搜索
+local_search:
+  enable: true
+
+# 代码高亮
+codeblock:
+  copy_button:
+    enable: true
+
+# 返回顶部
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# 创意共用协议
+creative_commons:
+  license: by-nc-sa
+  sidebar: false
+  post: true
+
+# Giscus 评论系统
+giscus:
+  enable: true
+  repo: maomaoliang/maomaoliang.github.io
+  repo_id: MDEwOlJlcG9zaXRvcnk0NzExNjkzMg==
+  category: Announcements
+  category_id: DIC_kwDOAs7yhM4C4AnB
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: zh-CN
