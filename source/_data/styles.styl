@@ -1,0 +1,120 @@
+// 修复 Hexo 8 代码高亮：HTML 输出的 class 不带 hljs- 前缀，
+// 但 NexT 的 CSS 只有 .hljs-xxx 规则，导致语法高亮颜色丢失。
+// 这里为 figure.highlight 内不带前缀的 class 添加等效样式。
+
+figure.highlight
+  .comment
+    color: #697070
+  .tag,
+  .punctuation
+    color: #444a
+  .keyword,
+  .attribute,
+  .selector-tag,
+  .doctag,
+  .name
+    font-weight: bold
+  .type,
+  .string,
+  .number,
+  .selector-id,
+  .selector-class,
+  .quote,
+  .template-tag,
+  .deletion
+    color: #880000
+  .title,
+  .section
+    color: #880000
+    font-weight: bold
+  .regexp,
+  .symbol,
+  .variable,
+  .template-variable,
+  .link,
+  .selector-attr,
+  .operator,
+  .selector-pseudo
+    color: #ab5656
+  .literal
+    color: #695
+  .built_in,
+  .bullet,
+  .code,
+  .addition
+    color: #397300
+  .meta
+    color: #1f7199
+  .meta .string
+    color: #38a
+  .emphasis
+    font-style: italic
+  .strong
+    font-weight: bold
+  .attr
+    color: #444
+  .params
+    color: #444
+  .function
+    color: #880000
+    font-weight: bold
+  .title.function_
+    color: #880000
+    font-weight: bold
+
+// 暗色模式下的代码高亮
+@media (prefers-color-scheme: dark)
+  figure.highlight
+    .comment
+      color: #999999
+    .tag,
+    .punctuation
+      color: #ffffffa0
+    .keyword,
+    .attribute,
+    .selector-tag,
+    .doctag,
+    .name
+      font-weight: bold
+      color: #cc7832
+    .type,
+    .string,
+    .number,
+    .selector-id,
+    .selector-class,
+    .quote,
+    .template-tag,
+    .deletion
+      color: #a5c261
+    .title,
+    .section
+      color: #ffc66d
+      font-weight: bold
+    .regexp,
+    .symbol,
+    .variable,
+    .template-variable,
+    .link,
+    .selector-attr,
+    .operator,
+    .selector-pseudo
+      color: #cb8976
+    .literal
+      color: #6897bb
+    .built_in,
+    .bullet,
+    .code,
+    .addition
+      color: #6a8759
+    .meta
+      color: #bbb529
+    .meta .string
+      color: #6a8759
+    .attr
+      color: #bababa
+    .params
+      color: #bababa
+    .function,
+    .title.function_
+      color: #ffc66d
+      font-weight: bold

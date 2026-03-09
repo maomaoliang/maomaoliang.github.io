@@ -50,7 +50,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   preprocess: true
   line_number: true
@@ -133,21 +133,10 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-# [N] Markdown-it 渲染器 + Emoji 支持
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    langPrefix: 'language-'
-    breaks: true
-    linkify: true
-    typographer: true
-  plugins:
-    - markdown-it-emoji
-  anchors:
-    level: 2
-    collisionSuffix: ''
-    permalink: false
+# [N] Markdown 渲染器 (hexo-renderer-marked)
+marked:
+  gfm: true
+  breaks: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
