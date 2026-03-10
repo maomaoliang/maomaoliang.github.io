@@ -141,4 +141,6 @@ marked:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:maomaoliang/maomaoliang.github.io.git
+  branch: master
