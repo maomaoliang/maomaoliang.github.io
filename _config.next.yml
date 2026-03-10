@@ -6,6 +6,12 @@ scheme: Mist
 # [B] 暗色模式 - 读者可切换深色主题
 darkmode: true
 
+# 全局字体设置 - 调整全站字体大小
+font:
+  enable: true
+  global:
+    size: 0.875
+
 # 站点图标
 favicon:
   small: /images/favicon-16x16-next.png
