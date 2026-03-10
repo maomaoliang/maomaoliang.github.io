@@ -10,6 +10,8 @@ date: 2018-10-23 13:11:00
 
 yo yo yo ,  I have solved the fucking oa-net…marked
 
+<!-- more -->
+
 修改的depoly的配置即可. 修改站点配置文件`.config.yml`
 
 原配置：

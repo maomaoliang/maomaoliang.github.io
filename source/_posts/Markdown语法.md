@@ -13,6 +13,8 @@ date: 2015-12-05 15:04:38
 [Markdown 编辑器语法指南](https://segmentfault.com/markdown/)
 [Markdown 在线编辑器](https://www.zybuluo.com/mdeditor)
 
+<!-- more -->
+
 ## 概述
 
 概述宗旨

@@ -3,6 +3,12 @@
 # 使用 Mist 风格
 scheme: Mist
 
+# 文章摘要：使用 description 字段作为摘要
+excerpt_description: true
+
+# 显示"阅读全文"按钮
+read_more_btn: true
+
 # [B] 暗色模式 - 读者可切换深色主题
 darkmode: true
 
@@ -20,7 +26,7 @@ favicon:
 
 # 头像
 avatar:
-  url: /images/avatar.gif
+  url: /images/avatar.jpg
   rounded: true
   rotated: false
 

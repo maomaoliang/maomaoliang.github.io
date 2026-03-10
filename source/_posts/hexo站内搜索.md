@@ -16,6 +16,8 @@ date: 2018-10-13 14:45:23
 [next主题官网](http://theme-next.iissnan.com/)
 [next最新下载](https://github.com/theme-next/hexo-theme-next/releases)
 
+<!-- more -->
+
 ### 安装 hexo-generator-search
 
 1
